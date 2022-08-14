@@ -1,0 +1,46 @@
+@media screen and(min-width:0) {
+	.cover,
+	aside#phone_menu {
+		display: none;
+		position: fixed;
+		top: 0;
+		left: -200%;
+		height: 100vh;
+		z-index: 4;
+		width: 90%;
+		background-color: $color5;
+		padding-top: 20px;
+		.top {
+			width: 100%;
+			height: 40px;
+			padding: 0 20px;
+			@include flex(flex-end, center);
+			.menu_close {
+				width: 30px;
+				height: 30px;
+				background-color: $color1;
+				color: $color3;
+				border: none;
+				border-radius: 3px;
+				@include flex(center, center);
+			}
+		}
+	}
+	.cover {
+		z-index: 3;
+		width: 100%;
+		background-color: rgba(49, 41, 41, 0.411);
+	}
+}
+
+@media screen and(min-width:768px) {
+	aside#phoneMenu {
+		width: 40%;
+	}
+}
+@media screen and(min-width:1024px) {
+	.cover,
+	aside#phoneMenu {
+		display: none;
+	}
+}

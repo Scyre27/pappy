@@ -1,0 +1,917 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+@font-face {
+  font-family: "georgia";
+  src: url("../fonts/georgia.ttf");
+}
+@media screen and (min-width: 0) {
+  body {
+    height: auto;
+    padding-bottom: 0;
+  }
+  main#home #hero {
+    background-color: green;
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    overflow: hidden;
+    background: url("../images/people.png");
+    background-size: 140% 100%;
+    background-position: center;
+  }
+  main#home #hero img {
+    width: 160%;
+    position: center;
+    height: 100%;
+  }
+  main#home #hero .hero_text {
+    width: 90%;
+    height: 140px;
+    background-color: #ad342a;
+    opacity: 0.7;
+    left: 5%;
+    color: #ffffff;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 40px 30px;
+  }
+  main#home #hero .hero_text h2 {
+    font-weight: 300;
+    font-size: 32px;
+  }
+  main#home #container {
+    padding-top: 45px;
+    color: #212529;
+    line-height: 30px;
+    font-size: 17px;
+  }
+  main#home #container .intro {
+    width: 100%;
+    height: auto;
+    padding: 0 20px;
+    padding-bottom: 15px;
+    position: relative;
+    padding-top: 25px;
+  }
+  main#home #container .intro a {
+    color: #212529;
+    text-decoration: none;
+    font-family: "georgia";
+    font-size: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: flex-start;
+    -ms-flex-pack: flex-start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  main#home #container .intro a span {
+    width: 20px;
+    height: 20px;
+    background-color: #ad342a;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: 10px;
+  }
+  main#home #container .intro a span i {
+    color: white;
+    font-size: 14px;
+  }
+  main#home #container .intro a:hover {
+    color: #ad342a;
+    cursor: pointer;
+  }
+  main#home #container .intro::before {
+    content: "";
+    width: 120px;
+    height: 5px;
+    background-color: #ad342a;
+    position: absolute;
+    left: 20px;
+    top: 0;
+    z-index: 2;
+    margin-bottom: 20px;
+  }
+  main#home #container .collage {
+    width: 100%;
+    padding: 8px 0;
+    height: auto;
+    display: grid;
+    margin-top: 20px;
+  }
+  main#home #container .collage .collage_elem {
+    background-color: #fff;
+    width: 100%;
+    height: 250px;
+    margin-bottom: 20px;
+  }
+  main#home #container .collage .collage_elem img {
+    width: 100%;
+    height: 100%;
+  }
+  main#home #container .collage #report,
+main#home #container .collage #talents {
+    margin-bottom: 20px;
+    padding: 10px 20px 20px 20px;
+  }
+  main#home #container .collage #report .heading h3 a,
+main#home #container .collage #talents .heading h3 a {
+    text-decoration: none;
+    color: #212529;
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 18px;
+  }
+  main#home #container .collage #report .heading h3 a span,
+main#home #container .collage #talents .heading h3 a span {
+    font-size: 14px;
+    margin-left: 5px;
+  }
+  main#home #container .collage #report .content,
+main#home #container .collage #talents .content {
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    padding-bottom: 15px;
+    position: relative;
+    padding-top: 15px;
+  }
+  main#home #container .collage #report .content h3,
+main#home #container .collage #talents .content h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+  }
+  main#home #container .collage #report .content a,
+main#home #container .collage #talents .content a {
+    color: #212529;
+    text-decoration: none;
+    font-family: "georgia";
+    font-size: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: flex-start;
+    -ms-flex-pack: flex-start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  main#home #container .collage #report .content a span,
+main#home #container .collage #talents .content a span {
+    width: 20px;
+    height: 20px;
+    background-color: #ad342a;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: 10px;
+  }
+  main#home #container .collage #report .content a span i,
+main#home #container .collage #talents .content a span i {
+    color: white;
+    font-size: 14px;
+  }
+  main#home #container .collage #report .content a:hover,
+main#home #container .collage #talents .content a:hover {
+    color: #ad342a;
+    cursor: pointer;
+  }
+  main#home #container .collage #report .content::before,
+main#home #container .collage #talents .content::before {
+    content: "";
+    width: 80px;
+    height: 5px;
+    background-color: #ad342a;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    margin-bottom: 20px;
+  }
+  main#home #container #headlines,
+main#home #container #investors {
+    width: 100%;
+    height: auto;
+    background-color: #f1f1f1;
+    padding: 40px 20px;
+  }
+  main#home #container #headlines a,
+main#home #container #investors a {
+    text-decoration: none;
+    font-family: "Roboto Condensed", sans-serif;
+    color: #212529;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 15px;
+  }
+  main#home #container #headlines a span,
+main#home #container #investors a span {
+    font-size: 14px;
+    margin-left: 5px;
+  }
+  main#home #container #headlines a:hover,
+main#home #container #investors a:hover {
+    color: #ad342a;
+  }
+  main#home #container #headlines .headline,
+main#home #container #headlines .info,
+main#home #container #investors .headline,
+main#home #container #investors .info {
+    width: 100%;
+    height: auto;
+    padding-bottom: 35px;
+    position: relative;
+    padding-top: 15px;
+  }
+  main#home #container #headlines .headline .date,
+main#home #container #headlines .info .date,
+main#home #container #investors .headline .date,
+main#home #container #investors .info .date {
+    font-family: "georgia";
+    font-size: 18px;
+  }
+  main#home #container #headlines .headline .desktop,
+main#home #container #headlines .info .desktop,
+main#home #container #investors .headline .desktop,
+main#home #container #investors .info .desktop {
+    display: none;
+  }
+  main#home #container #headlines .headline p,
+main#home #container #headlines .info p,
+main#home #container #investors .headline p,
+main#home #container #investors .info p {
+    font-size: 15px;
+  }
+  main#home #container #headlines .headline .dollar,
+main#home #container #headlines .info .dollar,
+main#home #container #investors .headline .dollar,
+main#home #container #investors .info .dollar {
+    font-weight: bold;
+    margin-top: 20px;
+    width: 70px;
+    height: auto;
+    position: relative;
+  }
+  main#home #container #headlines .headline .dollar::after,
+main#home #container #headlines .info .dollar::after,
+main#home #container #investors .headline .dollar::after,
+main#home #container #investors .info .dollar::after {
+    content: "↓2%";
+    white-space: pre-wrap;
+    position: absolute;
+    font-weight: bold;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: flex-start;
+    -ms-flex-pack: flex-start;
+    justify-content: flex-start;
+    -webkit-box-align: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+    font-size: 18px;
+    right: 0;
+    top: -15px;
+  }
+  main#home #container #headlines .headline::before,
+main#home #container #headlines .info::before,
+main#home #container #investors .headline::before,
+main#home #container #investors .info::before {
+    content: "";
+    width: 90px;
+    height: 5px;
+    background-color: #ad342a;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    margin-bottom: 20px;
+  }
+  main#home #container #headlines .headline a,
+main#home #container #headlines .info a,
+main#home #container #investors .headline a,
+main#home #container #investors .info a {
+    color: #212529;
+    text-decoration: none;
+    font-family: "georgia";
+    font-size: 18px;
+    text-transform: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: flex-start;
+    -ms-flex-pack: flex-start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  main#home #container #headlines .headline a span,
+main#home #container #headlines .info a span,
+main#home #container #investors .headline a span,
+main#home #container #investors .info a span {
+    width: 20px;
+    height: 20px;
+    background-color: #ad342a;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: 10px;
+  }
+  main#home #container #headlines .headline a span i,
+main#home #container #headlines .info a span i,
+main#home #container #investors .headline a span i,
+main#home #container #investors .info a span i {
+    color: white;
+    font-size: 14px;
+  }
+  main#home #container #headlines .headline a:hover,
+main#home #container #headlines .info a:hover,
+main#home #container #investors .headline a:hover,
+main#home #container #investors .info a:hover {
+    color: #ad342a;
+    cursor: pointer;
+  }
+  main#home #container #investors {
+    padding-bottom: 0px;
+  }
+  main#home #container #socials {
+    width: 100%;
+    height: 350px;
+    padding: 20px 0;
+    color: #ffffff;
+    background-color: #ad342a;
+  }
+  main#home #container #socials .intro p {
+    font-size: 24px;
+  }
+  main#home #container #socials .intro .em {
+    font-family: "georgia";
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 30px;
+  }
+  main#home #container #socials .social_elements {
+    width: 100%;
+    margin-top: 20px;
+    padding: 0 20px;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: flex-start;
+    -ms-flex-pack: flex-start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  main#home #container #socials .social_elements .social_element {
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  main#home #container #socials .social_elements .social_element i {
+    font-size: 26px;
+  }
+  footer {
+    padding: 10px 10px 40px 10px;
+    width: 100%;
+    height: auto;
+  }
+  footer nav {
+    width: 70%;
+    height: 70px;
+  }
+  footer nav a {
+    text-decoration: none;
+    margin-top: 20px;
+    font-family: "georgia";
+    color: #212529;
+    font-size: 16px;
+  }
+  footer nav a::after {
+    content: "|";
+    margin-left: 10px;
+    margin-right: 5px;
+  }
+  footer nav a:nth-child(6)::after {
+    display: none;
+  }
+  footer .attribution {
+    font-family: "georgia";
+  }
+  footer .attribution span {
+    font-family: "georgia";
+  }
+}
+@media screen and (min-width: 546px) {
+  main#home #container .collage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    gap: 20px;
+  }
+  main#home #container .collage .collage_elem {
+    height: 100%;
+  }
+  main#home #container .collage .collage_elem:nth-child(2) {
+    grid-row: 1/3;
+    grid-column: 2/3;
+  }
+  main#home #container .collage #report,
+main#home #container .collage #talents {
+    width: 100%;
+    grid-row: 3/4;
+    grid-column: 1/3;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main#home #hero {
+    height: 88vh;
+    background-size: 100% 120%;
+    -webkit-transition: linear all 2s;
+    -webkit-transition: linear all 1s;
+    transition: linear all 1s;
+  }
+  main#home #hero .hero_text {
+    width: 82%;
+    left: 9%;
+  }
+  main#home #hero .hero_text h2 {
+    font-size: 65px;
+    letter-spacing: -3px;
+  }
+  main#home #container .intro {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+  main#home #container .intro p {
+    width: 90%;
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  main#home #container .collage {
+    display: grid;
+    grid-template-columns: 2fr 3fr 3fr;
+    grid-template-rows: 500px 300px;
+    height: auto;
+    gap: 0 20px;
+    padding-bottom: 40px;
+  }
+  main#home #container .collage .collage_elem {
+    height: 100%;
+    overflow: hidden;
+  }
+  main#home #container .collage .collage_elem img {
+    width: 210%;
+    margin-left: -55%;
+    height: 100%;
+  }
+  main#home #container .collage .collage_elem:nth-child(1) {
+    grid-row: 1/3;
+    grid-column: 1/2;
+  }
+  main#home #container .collage .collage_elem:nth-child(2) {
+    grid-row: 1/3;
+    grid-column: 3/4;
+  }
+  main#home #container .collage .collage_elem:nth-child(3) {
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+  main#home #container .collage .collage_elem:nth-child(3) img {
+    width: 100%;
+    margin-left: 0;
+  }
+  main#home #container .collage #report,
+main#home #container .collage #talents {
+    grid-row: 1/3;
+    grid-column: 2/3;
+  }
+  main#home #container .collage #report .heading h3 a,
+main#home #container .collage #talents .heading h3 a {
+    font-size: 26px;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 0.5;
+    color: #212529;
+    text-transform: uppercase;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+  main#home #container .collage #report .heading h3 a span,
+main#home #container .collage #talents .heading h3 a span {
+    font-size: 22px;
+  }
+  main#home #container .collage #report .heading h3 a:hover,
+main#home #container .collage #talents .heading h3 a:hover {
+    color: #ad342a;
+    cursor: pointer;
+  }
+  main#home #container .collage #report .content,
+main#home #container .collage #talents .content {
+    height: auto;
+  }
+  main#home #container .collage #report .content h3,
+main#home #container .collage #talents .content h3 {
+    font-size: 64px;
+    margin-top: 20px;
+    line-height: 60px;
+  }
+  main#home #container .collage #report .content p,
+main#home #container .collage #talents .content p {
+    font-size: 22px;
+    margin: 20px 0;
+    width: 90%;
+  }
+  main#home #container .collage #report .content a,
+main#home #container .collage #talents .content a {
+    color: #212529;
+    text-decoration: none;
+    font-family: "georgia";
+    font-size: 18px;
+    margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: flex-start;
+    -ms-flex-pack: flex-start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  main#home #container .collage #report .content a span,
+main#home #container .collage #talents .content a span {
+    width: 20px;
+    height: 20px;
+    background-color: #ad342a;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: 10px;
+  }
+  main#home #container .collage #report .content a span i,
+main#home #container .collage #talents .content a span i {
+    color: white;
+    font-size: 14px;
+  }
+  main#home #container .collage #report .content a:hover,
+main#home #container .collage #talents .content a:hover {
+    color: #ad342a;
+  }
+  main#home #container #headlines,
+main#home #container #investors {
+    padding-top: 60px;
+    height: auto;
+    padding-bottom: 0;
+  }
+  main#home #container #headlines .headlines_container,
+main#home #container #headlines .investors_container,
+main#home #container #investors .headlines_container,
+main#home #container #investors .investors_container {
+    width: 100%;
+    height: 750px;
+    margin: 0 auto;
+    max-width: 1124px;
+  }
+  main#home #container #headlines .headlines_container .articles,
+main#home #container #headlines .headlines_container .information,
+main#home #container #headlines .investors_container .articles,
+main#home #container #headlines .investors_container .information,
+main#home #container #investors .headlines_container .articles,
+main#home #container #investors .headlines_container .information,
+main#home #container #investors .investors_container .articles,
+main#home #container #investors .investors_container .information {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+  main#home #container #headlines .headlines_container .articles .headline,
+main#home #container #headlines .headlines_container .information .headline,
+main#home #container #headlines .investors_container .articles .headline,
+main#home #container #headlines .investors_container .information .headline,
+main#home #container #investors .headlines_container .articles .headline,
+main#home #container #investors .headlines_container .information .headline,
+main#home #container #investors .investors_container .articles .headline,
+main#home #container #investors .investors_container .information .headline {
+    height: 100%;
+  }
+  main#home #container #headlines .headlines_container .articles .headline .date,
+main#home #container #headlines .headlines_container .information .headline .date,
+main#home #container #headlines .investors_container .articles .headline .date,
+main#home #container #headlines .investors_container .information .headline .date,
+main#home #container #investors .headlines_container .articles .headline .date,
+main#home #container #investors .headlines_container .information .headline .date,
+main#home #container #investors .investors_container .articles .headline .date,
+main#home #container #investors .investors_container .information .headline .date {
+    font-size: 21px;
+  }
+  main#home #container #headlines .headlines_container .articles .headline .desc a,
+main#home #container #headlines .headlines_container .information .headline .desc a,
+main#home #container #headlines .investors_container .articles .headline .desc a,
+main#home #container #headlines .investors_container .information .headline .desc a,
+main#home #container #investors .headlines_container .articles .headline .desc a,
+main#home #container #investors .headlines_container .information .headline .desc a,
+main#home #container #investors .investors_container .articles .headline .desc a,
+main#home #container #investors .investors_container .information .headline .desc a {
+    font-size: 30px;
+    line-height: 40px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+  }
+  main#home #container #headlines .headlines_container .articles .headline:nth-child(1),
+main#home #container #headlines .headlines_container .information .headline:nth-child(1),
+main#home #container #headlines .investors_container .articles .headline:nth-child(1),
+main#home #container #headlines .investors_container .information .headline:nth-child(1),
+main#home #container #investors .headlines_container .articles .headline:nth-child(1),
+main#home #container #investors .headlines_container .information .headline:nth-child(1),
+main#home #container #investors .investors_container .articles .headline:nth-child(1),
+main#home #container #investors .investors_container .information .headline:nth-child(1) {
+    grid-row: 1/3;
+  }
+  main#home #container #headlines .headlines_container .articles .headline:nth-child(1) .desc,
+main#home #container #headlines .headlines_container .information .headline:nth-child(1) .desc,
+main#home #container #headlines .investors_container .articles .headline:nth-child(1) .desc,
+main#home #container #headlines .investors_container .information .headline:nth-child(1) .desc,
+main#home #container #investors .headlines_container .articles .headline:nth-child(1) .desc,
+main#home #container #investors .headlines_container .information .headline:nth-child(1) .desc,
+main#home #container #investors .investors_container .articles .headline:nth-child(1) .desc,
+main#home #container #investors .investors_container .information .headline:nth-child(1) .desc {
+    width: 100%;
+    padding-left: 3px;
+  }
+  main#home #container #headlines .headlines_container .articles .headline:nth-child(1) .desc a.active,
+main#home #container #headlines .headlines_container .information .headline:nth-child(1) .desc a.active,
+main#home #container #headlines .investors_container .articles .headline:nth-child(1) .desc a.active,
+main#home #container #headlines .investors_container .information .headline:nth-child(1) .desc a.active,
+main#home #container #investors .headlines_container .articles .headline:nth-child(1) .desc a.active,
+main#home #container #investors .headlines_container .information .headline:nth-child(1) .desc a.active,
+main#home #container #investors .investors_container .articles .headline:nth-child(1) .desc a.active,
+main#home #container #investors .investors_container .information .headline:nth-child(1) .desc a.active {
+    font-size: 64px;
+    line-height: 65px;
+  }
+  main#home #container #headlines .headlines_container .articles .headline:nth-child(1) .desktop,
+main#home #container #headlines .headlines_container .information .headline:nth-child(1) .desktop,
+main#home #container #headlines .investors_container .articles .headline:nth-child(1) .desktop,
+main#home #container #headlines .investors_container .information .headline:nth-child(1) .desktop,
+main#home #container #investors .headlines_container .articles .headline:nth-child(1) .desktop,
+main#home #container #investors .headlines_container .information .headline:nth-child(1) .desktop,
+main#home #container #investors .investors_container .articles .headline:nth-child(1) .desktop,
+main#home #container #investors .investors_container .information .headline:nth-child(1) .desktop {
+    display: block;
+    font-size: 23px;
+    font-weight: 300;
+    margin-top: 40px;
+  }
+  main#home #container #headlines .headlines_container .articles .headline:nth-child(1) .desktop a,
+main#home #container #headlines .headlines_container .information .headline:nth-child(1) .desktop a,
+main#home #container #headlines .investors_container .articles .headline:nth-child(1) .desktop a,
+main#home #container #headlines .investors_container .information .headline:nth-child(1) .desktop a,
+main#home #container #investors .headlines_container .articles .headline:nth-child(1) .desktop a,
+main#home #container #investors .headlines_container .information .headline:nth-child(1) .desktop a,
+main#home #container #investors .investors_container .articles .headline:nth-child(1) .desktop a,
+main#home #container #investors .investors_container .information .headline:nth-child(1) .desktop a {
+    color: #212529;
+    text-decoration: none;
+    font-family: "georgia";
+    font-size: 18px;
+    margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: flex-start;
+    -ms-flex-pack: flex-start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  main#home #container #headlines .headlines_container .articles .headline:nth-child(1) .desktop a span,
+main#home #container #headlines .headlines_container .information .headline:nth-child(1) .desktop a span,
+main#home #container #headlines .investors_container .articles .headline:nth-child(1) .desktop a span,
+main#home #container #headlines .investors_container .information .headline:nth-child(1) .desktop a span,
+main#home #container #investors .headlines_container .articles .headline:nth-child(1) .desktop a span,
+main#home #container #investors .headlines_container .information .headline:nth-child(1) .desktop a span,
+main#home #container #investors .investors_container .articles .headline:nth-child(1) .desktop a span,
+main#home #container #investors .investors_container .information .headline:nth-child(1) .desktop a span {
+    width: 20px;
+    height: 20px;
+    background-color: #ad342a;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: 10px;
+  }
+  main#home #container #headlines .headlines_container .articles .headline:nth-child(1) .desktop a span i,
+main#home #container #headlines .headlines_container .information .headline:nth-child(1) .desktop a span i,
+main#home #container #headlines .investors_container .articles .headline:nth-child(1) .desktop a span i,
+main#home #container #headlines .investors_container .information .headline:nth-child(1) .desktop a span i,
+main#home #container #investors .headlines_container .articles .headline:nth-child(1) .desktop a span i,
+main#home #container #investors .headlines_container .information .headline:nth-child(1) .desktop a span i,
+main#home #container #investors .investors_container .articles .headline:nth-child(1) .desktop a span i,
+main#home #container #investors .investors_container .information .headline:nth-child(1) .desktop a span i {
+    color: white;
+    font-size: 14px;
+  }
+  main#home #container #headlines .headlines_container .articles .headline:nth-child(1) .desktop a:hover,
+main#home #container #headlines .headlines_container .information .headline:nth-child(1) .desktop a:hover,
+main#home #container #headlines .investors_container .articles .headline:nth-child(1) .desktop a:hover,
+main#home #container #headlines .investors_container .information .headline:nth-child(1) .desktop a:hover,
+main#home #container #investors .headlines_container .articles .headline:nth-child(1) .desktop a:hover,
+main#home #container #investors .headlines_container .information .headline:nth-child(1) .desktop a:hover,
+main#home #container #investors .investors_container .articles .headline:nth-child(1) .desktop a:hover,
+main#home #container #investors .investors_container .information .headline:nth-child(1) .desktop a:hover {
+    color: #ad342a;
+    cursor: pointer;
+  }
+  main#home #container #headlines .investors_container,
+main#home #container #investors .investors_container {
+    height: 300px;
+  }
+  main#home #container #headlines .investors_container .information,
+main#home #container #investors .investors_container .information {
+    grid-template-columns: repeat(3, 1fr);
+    height: 300px;
+  }
+  main#home #container #headlines .investors_container .information .info .desc,
+main#home #container #investors .investors_container .information .info .desc {
+    font-size: 30px;
+    font-weight: 300;
+  }
+  main#home #container #headlines .investors_container .information .info p,
+main#home #container #investors .investors_container .information .info p {
+    font-size: 22px;
+    margin-top: 10px;
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+  main#home #container #headlines .investors_container .information .info .dollar,
+main#home #container #investors .investors_container .information .info .dollar {
+    font-size: 72px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 400;
+    width: 150px;
+    height: 100px;
+    padding-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: flex-start;
+    -ms-flex-pack: flex-start;
+    justify-content: flex-start;
+    -webkit-box-align: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+  }
+  main#home #container #headlines .investors_container .information .info .dollar span,
+main#home #container #investors .investors_container .information .info .dollar span {
+    font-size: 36px;
+    margin-top: -10px;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+  main#home #container #socials {
+    height: 300px;
+  }
+  main#home #container #socials .socials_container {
+    width: 100%;
+    height: auto;
+    max-width: 1124px;
+    margin: 0 auto;
+    padding: 30px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-between;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  main#home #container #socials .socials_container .intro {
+    padding: 20px 0;
+    margin-right: auto;
+  }
+  main#home #container #socials .socials_container .intro::before {
+    display: none;
+  }
+  main#home #container #socials .socials_container .intro p {
+    font-size: 44px;
+    line-height: 40px;
+    width: 100%;
+  }
+  main#home #container #socials .socials_container .intro .em {
+    font-size: 24px;
+  }
+  main#home #container #socials .socials_container .social_elements {
+    width: 30%;
+    margin-left: 15%;
+    height: auto;
+  }
+  footer {
+    height: 100px;
+  }
+  footer .footer_container {
+    width: 100%;
+    height: 70px;
+    max-width: 1124px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: flex-start;
+    -ms-flex-pack: flex-start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  footer .footer_container nav {
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    margin-left: 10px;
+  }
+  footer .footer_container nav a {
+    margin: 0;
+    font-size: 18px;
+  }
+  footer .footer_container .attribution {
+    font-size: 18px;
+  }
+}

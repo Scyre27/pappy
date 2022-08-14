@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+@font-face {
+  font-family: "georgia";
+  src: url("../fonts/georgia.ttf");
+}
+@media screen and (min-width: 0) {
+  header {
+    width: 100%;
+    height: 70px;
+    background-color: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-between;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 20px;
+  }
+  header .left {
+    text-transform: capitalize;
+    font-weight: bolder;
+    color: #ad342a;
+    font-weight: 700;
+  }
+  header .right #menuBtn {
+    width: 30px;
+    height: 30px;
+    border: 5px;
+    color: #ad342a;
+    background-color: #ad342a;
+    border: none;
+  }
+  header .right #menuBtn i {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  header .right #desktop {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header {
+    width: 100%;
+    height: 80px;
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+  header .right {
+    width: 65%;
+  }
+  header .right #menuBtn {
+    display: none;
+  }
+  header .right #desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-between;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    font-weight: bold;
+    padding-left: 5px;
+  }
+  header .right #desktop a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 400;
+    color: #212529;
+  }
+  header .right #desktop a:hover {
+    color: #ad342a;
+  }
+}
+@media screen and (min-width: 0) {
+  .cover,
+aside#phone_menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: -200%;
+    height: 100vh;
+    z-index: 4;
+    width: 90%;
+    background-color: #f1f1f1;
+    padding-top: 20px;
+  }
+  .cover .top,
+aside#phone_menu .top {
+    width: 100%;
+    height: 40px;
+    padding: 0 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: flex-end;
+    -ms-flex-pack: flex-end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .cover .top .menu_close,
+aside#phone_menu .top .menu_close {
+    width: 30px;
+    height: 30px;
+    background-color: #ad342a;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .cover {
+    z-index: 3;
+    width: 100%;
+    background-color: rgba(49, 41, 41, 0.411);
+  }
+}
+@media screen and (min-width: 768px) {
+  aside#phoneMenu {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .cover,
+aside#phoneMenu {
+    display: none;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  position: relative;
+}
