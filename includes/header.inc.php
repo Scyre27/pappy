@@ -4,7 +4,7 @@
   </div>
   <div class="right">
     <nav id="desktop">
-      <a href="">About</a>
+      <a href="./about">About</a>
       <a href="">Culture</a>
       <a href="">Our agencies</a>
       <a href="">Newsroom</a>

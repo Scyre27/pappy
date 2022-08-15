@@ -213,7 +213,7 @@
           </div>
           <div class="social_elements">
             <div class="social_element">
-              <i class="fa-solid fa-facebook"></i>
+              <i class="fa-brands fa-facebook-f"></i>
             </div>
             <div class="social_element">
               <i class="fa-brands fa-twitter"></i>
@@ -222,7 +222,7 @@
               <i class="fa-brands fa-instagram"></i>
             </div>
             <div class="social_element">
-              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
             </div>
           </div>
         </div>
@@ -253,7 +253,7 @@
   </script>
 
   <script src="./js/jquery,min.js"></script>
-  <script src="./js/app.js" defer> </script>
+  <script src="./js/app.js" defer type="module"></script>
 </body>
 
 </html>
