@@ -20,7 +20,7 @@ include_once "functions/general.func.php";
 <body>
 	<?php include_once "includes/header.inc.php" ?>
 	<?php include_once "includes/menu.inc.php" ?>
-	<main id="content">
+	<main id="about">
 		<article class="hero w-full h-[250px] md:h-[90vh] md:mb-[100px]">
 			<img src="./images/group.jpg" alt="hero" class="w-full h-full" />
 		</article>
@@ -85,7 +85,7 @@ include_once "functions/general.func.php";
 		<i class="fa-brands fa-twitter ml-[13px] text-white"></i>
 	</footer>
 
-	<script src="./js/jquery,min.js"></script>
+	<script src="./js/jquery.min.js"></script>
 	<script src="./js/app.js" defer type="module"></script>
 </body>
 

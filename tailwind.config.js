@@ -6,6 +6,7 @@ module.exports = {
 			fontFamily: {
 				martel: ["Martel", "serif"],
 				ubuntu: ["Ubuntu", "sans-serif"],
+				georgia: ["georgia"],
 			},
 		},
 	},

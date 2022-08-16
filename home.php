@@ -9,7 +9,9 @@
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
   <title>Website - Home</title>
-  <link rel="stylesheet" href="./css/includes.css">
+  <link rel="stylesheet" href="./css/includes.css" />
+  <link rel="stylesheet" href="./css/output.css" />
+  <link rel="stylesheet" href="./css/services.css" />
   <link rel="stylesheet" href="./css/styles.css">
   <script src="https://kit.fontawesome.com/f6e3b67683.js" crossorigin="anonymous"></script>
 </head>
@@ -229,6 +231,7 @@
 
       </article>
     </section>
+    <?php include "includes/contact.inc.php" ?>
   </main>
   <footer>
     <div class="footer_container">
@@ -252,7 +255,7 @@
     document.querySelector("footer .attribution span").textContent = year;
   </script>
 
-  <script src="./js/jquery,min.js"></script>
+  <script src="./js/jquery.min.js"></script>
   <script src="./js/app.js" defer type="module"></script>
 </body>
 
